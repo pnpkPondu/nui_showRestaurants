@@ -1,0 +1,25 @@
+input[type="button"]{
+    display: none;
+}
+
+.mainTitle{
+    display:block;
+    color: palevioletred;
+    border-width: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.index-btn{
+    display:block;
+
+    padding: 5px 10px;
+    background-color: palevioletred;
+    border-radius: 10px;
+    
+    color: white;
+    border-width: bold;
+    font-size: 24px;
+    text-align: center;
+}
