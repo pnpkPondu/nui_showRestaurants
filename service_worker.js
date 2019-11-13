@@ -1,8 +1,12 @@
 // キャッシュファイルの指定
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
-    '/pnpkpondu.github.io/',
+    'https://pnpkpondu.github.io/nui_showRestaurants_dev/index.html',
 ];
+
+const CACHE_KEYS = [
+    CACHE_NAME
+  ];
 
 // インストール処理
 self.addEventListener('install', function(event) {
@@ -10,7 +14,7 @@ self.addEventListener('install', function(event) {
         caches
             .open(CACHE_NAME)
             .then(function(cache) {
-                return cache.addAll(urlsToCache.map(url => new Request(url, {credentials: 'same-origin'})));
+               return cache.addAll(urlsToCache);
             })
     );
 });
