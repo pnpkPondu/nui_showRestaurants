@@ -1,7 +1,7 @@
 // キャッシュファイルの指定
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
-    'pnpkpondu.github.io/nui_showRestaurants/',
+    'nui_showRestaurants/',
 ];
 
 // インストール処理
