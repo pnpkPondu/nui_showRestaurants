@@ -7,7 +7,7 @@ $(function(){
 
 app.indexReadyFunction = function(){
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service_worker.js').then(function() { console.log('Service Worker Registered'); });
+        navigator.serviceWorker.register('service_worker.js').then(function() { console.log('Service Worker Registered'); });
      }
      else{
          console.log("a");
